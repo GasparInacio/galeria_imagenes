@@ -1,0 +1,320 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/*Header*/
+.header {
+    display: flex;
+    position: fixed;
+    background-color: rgba(128, 128, 128, 0.651);
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+/*Logo*/
+.logo {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo p {
+    font-size: 33px;
+    font-weight: 400px;
+    font-style: italic;
+}
+
+/* Barra de navegación */
+.navContainer {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    margin-right: 20px;
+
+}
+
+.navContainer li {
+    display: inline;
+    list-style: none;
+    margin: 5px;
+    font-size: 22px;
+}
+
+.navContainer a {
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+    font-weight: bold;
+}
+
+.navContainer a:hover {
+    color: rgb(0, 0, 0);
+    text-shadow: .1px .1px .1px rgb(0, 0, 0);
+}
+
+/*Inicio*/
+#home {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 60px;
+    background-color: antiquewhite;
+}
+
+/* Imagen del home con el título */
+.homeCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 800px;
+    background-image: url(./img/fondo1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.homeTitle {
+    font-size: 60px;
+    margin-top: -280px;
+    color: rgb(250, 245, 238);
+}
+
+.homeTitle span {
+    font-style: italic;
+}
+
+.homeSubtitle {
+    font-size: 45px;
+    color: rgb(250, 245, 238);
+}
+
+/*Sección de galería*/
+#products {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    background-color: antiquewhite;
+}
+
+/* Galería propiamente dicha */
+.travelPhotos {
+    display: flex;
+    width: 70%;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    margin-top: 70px;
+    background-color: azure;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.75);
+}
+
+.imgCard {
+    display: flex;
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.img1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    background-image: url(./img/amsterdam-6393230_1280.jpg);
+}
+
+.img2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    background-image: url(./img/barcelona-2371946_1280.jpg);
+}
+
+.img3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    background-image: url(./img/cathedral-6539937_1280.jpg);
+}
+
+.img4 {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    background-image: url(./img/eiffel-tower-3862939_1280.jpg);
+}
+
+.img5 {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    background-image: url(./img/new-york-5155189_1280.jpg);
+}
+
+.img6 {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    background-image: url(./img/street-3401918_1280.jpg);
+}
+
+.cardText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 35px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.573);
+    text-align: center;
+    border-radius: 10px;
+}
+
+/*Contacto*/
+#contact {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+/* Carta de contacto */
+.cardContainer {
+    display: flex;
+    width: 700px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.75)
+}
+
+.contactCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 250px;
+    margin: 5px 10px 0 0;
+    text-align: center;
+}
+
+.contactTitle {
+    width: 100%;
+    font-size: 28px;
+    margin: 30px 0px 0 0px;
+    font-weight: bold;
+}
+
+.descriptionContact {
+    font-size: 19px;
+    margin-top:20px;
+    margin: 20px 5px 10px 5px;
+}
+
+.contactIcons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 45px;
+    width: 300px;
+    font-size: 33px;
+    margin: 20px 15px 35px 15px;
+}
+
+.facebook {
+    color: rgb(1, 1, 133);
+    transition: .3s;
+}
+
+.facebook:hover {
+    scale: 1.15;
+}
+
+.instagram {
+    color: rgb(133, 1, 127);
+    transition: .3s;
+}
+
+.instagram:hover {
+    scale: 1.15;
+}
+
+.wapp {
+    color: rgb(2, 128, 33);
+    transition: .3s;
+}
+
+.wapp:hover {
+    scale: 1.15;
+}
+
+.mail {
+    margin-right: 5px;
+}
+
+.bttn {
+    width: 150px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid rgb(108, 107, 107);
+    background-color: rgb(108, 107, 107);
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.bttn:hover {
+    scale: 1.05;
+}
+
+.cardImg {
+    width: 240px;
+    height: 250px;
+    background-image: url(./img/postcard.jpg);
+    background-size: cover;
+    border-radius: 5px;
+}
